@@ -4,18 +4,19 @@ const num2 = +prompt("Enter your age:");
 let result;
 
 
-if(operation === 'add' || operation === 'sub' || operation === 'mult' || operation === 'div') {
-		result = (`${operation}: ${num1} + ${num2} = ${num1 + num2}`);
-} else {
-    alert(`Its not: add, sub, mult, div!!!
-    Try again!!!!`)
+if(operation === 'add') {
+		result = (`${num1} + ${num2} = ${num1 + num2}`);
+} else if(operation === 'sub') {
+		result = (`${num1} - ${num2} = ${num1 - num2}`);
+} else if(operation === 'mult') {
+  result = (`${num1} * ${num2} = ${num1 * num2}`);
+} else if(operation === 'div'){
+	result = (`${num1} / ${num2} = ${num1 / num2}`);
+} else if(operation !== 'add' || operation !== 'sub' || operation !== 'mult' || operation !== 'div') {
+		alert(`I don't know how to act !!!
+      Try again....`);
 }
-console.log(result)
-
 if(isNaN(num1) || isNaN(num2)) {
-    alert(`Its not a value!!!
-  Try again!!!!`)
-} else {
-result = (`${num1} + ${num2} = ${num1 + num2}`)
+		alert(`Its not a value!!!!`)
 }
 console.log(result)
