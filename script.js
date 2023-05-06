@@ -19,4 +19,3 @@ if(operation === 'add') {
 if(isNaN(num1) || isNaN(num2)) {
 		alert(`Its not a value!!!!`)
 }
-console.log(result)
